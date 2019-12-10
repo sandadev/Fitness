@@ -51,7 +51,10 @@ namespace FitnessproWebApp
                       "~/Theme/app-assets/vendors/js/pickers/pickadate/legacy.js",
                       "~/Theme/app-assets/vendors/js/pickers/daterange/daterangepicker.js",
                       "~/Theme/app-assets/js/scripts/pickers/dateTime/bootstrap-datetime.js",
-                      "~/Theme/app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js"
+                      "~/Theme/app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js",
+                      "~/Theme/app-assets/js/scripts/navs/navs.js",
+                      "~/Theme/app-assets/vendors/js/forms/validation/jqBootstrapValidation.js",
+                      "~/Theme/app-assets/js/scripts/forms/validation/form-validation.js"
                       )) ;
             
             //Template scripts and css
@@ -80,7 +83,8 @@ namespace FitnessproWebApp
                       "~/Theme/app-assets/vendors/css/pickers/daterange/daterangepicker.css",
                       "~/Theme/app-assets/vendors/css/pickers/datetime/bootstrap-datetimepicker.css",
                       "~/Theme/app-assets/vendors/css/pickers/pickadate/pickadate.css",
-                      "~/Theme/app-assets/css/plugins/pickers/daterange/daterange.css"
+                      "~/Theme/app-assets/css/plugins/pickers/daterange/daterange.css",
+                      "~/Theme/app-assets/css/plugins/forms/validation/form-validation.css"
                       ));
         }
     }

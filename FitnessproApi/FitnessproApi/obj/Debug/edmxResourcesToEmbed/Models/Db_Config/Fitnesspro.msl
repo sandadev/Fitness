@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="fitness6_FitnessproModelStoreContainer" CdmEntityContainer="FitnessproEntities">
+    <EntitySetMapping Name="Gyms">
+      <EntityTypeMapping TypeName="fitness6_FitnessproModel.Gym">
+        <MappingFragment StoreEntitySet="Gym">
+          <ScalarProperty Name="GymId" ColumnName="GymId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="GymName" ColumnName="GymName" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="TelephoneNumber" ColumnName="TelephoneNumber" />
+          <ScalarProperty Name="EnrolledDate" ColumnName="EnrolledDate" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EstablishedYear" ColumnName="EstablishedYear" />
+          <ScalarProperty Name="ServiceId" ColumnName="ServiceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Saloons">
+      <EntityTypeMapping TypeName="fitness6_FitnessproModel.Saloon">
+        <MappingFragment StoreEntitySet="Saloon">
+          <ScalarProperty Name="SaloonId" ColumnName="SaloonId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="SaloonName" ColumnName="SaloonName" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="TelephoneNumber" ColumnName="TelephoneNumber" />
+          <ScalarProperty Name="EnrolledDate" ColumnName="EnrolledDate" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EstablishedYear" ColumnName="EstablishedYear" />
+          <ScalarProperty Name="ServiceId" ColumnName="ServiceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Services">
+      <EntityTypeMapping TypeName="fitness6_FitnessproModel.Service">
+        <MappingFragment StoreEntitySet="Services">
+          <ScalarProperty Name="ServiceId" ColumnName="ServiceId" />
+          <ScalarProperty Name="ServiceName" ColumnName="ServiceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Spas">
+      <EntityTypeMapping TypeName="fitness6_FitnessproModel.Spa">
+        <MappingFragment StoreEntitySet="Spa">
+          <ScalarProperty Name="SpaId" ColumnName="SpaId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="SpaName" ColumnName="SpaName" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="TelephoneNumber" ColumnName="TelephoneNumber" />
+          <ScalarProperty Name="EnrolledDate" ColumnName="EnrolledDate" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EstablishedYear" ColumnName="EstablishedYear" />
+          <ScalarProperty Name="ServiceId" ColumnName="ServiceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

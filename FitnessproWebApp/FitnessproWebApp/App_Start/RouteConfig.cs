@@ -13,7 +13,7 @@ namespace FitnessproWebApp
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-           // routes.MapMvcAttributeRoutes();
+           //routes.MapMvcAttributeRoutes();
 
             //AreaRegistration.RegisterAllAreas();
 

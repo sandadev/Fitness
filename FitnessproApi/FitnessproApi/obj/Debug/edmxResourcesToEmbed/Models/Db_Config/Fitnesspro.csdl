@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="fitness6_FitnessproModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Gym">
+    <Key>
+      <PropertyRef Name="GymId" />
+    </Key>
+    <Property Name="GymId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="GymName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MobileNumber" Type="Int64" />
+    <Property Name="TelephoneNumber" Type="Int64" />
+    <Property Name="EnrolledDate" Type="DateTime" Precision="0" />
+    <Property Name="Email" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EstablishedYear" Type="Int32" />
+    <Property Name="ServiceId" Type="Int32" />
+    <NavigationProperty Name="Service" Relationship="Self.FK__Gym__ServiceId__25869641" FromRole="Gym" ToRole="Services" />
+  </EntityType>
+  <EntityType Name="Saloon">
+    <Key>
+      <PropertyRef Name="SaloonId" />
+    </Key>
+    <Property Name="SaloonId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SaloonName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MobileNumber" Type="Int64" />
+    <Property Name="TelephoneNumber" Type="Int64" />
+    <Property Name="EnrolledDate" Type="DateTime" Precision="0" />
+    <Property Name="Email" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EstablishedYear" Type="Int32" />
+    <Property Name="ServiceId" Type="Int32" />
+    <NavigationProperty Name="Service" Relationship="Self.FK__Saloon__ServiceI__2B3F6F97" FromRole="Saloon" ToRole="Services" />
+  </EntityType>
+  <EntityType Name="Service">
+    <Key>
+      <PropertyRef Name="ServiceId" />
+    </Key>
+    <Property Name="ServiceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ServiceName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Gyms" Relationship="Self.FK__Gym__ServiceId__25869641" FromRole="Services" ToRole="Gym" />
+    <NavigationProperty Name="Saloons" Relationship="Self.FK__Saloon__ServiceI__2B3F6F97" FromRole="Services" ToRole="Saloon" />
+    <NavigationProperty Name="Spas" Relationship="Self.FK__Spa__ServiceId__286302EC" FromRole="Services" ToRole="Spa" />
+  </EntityType>
+  <EntityType Name="Spa">
+    <Key>
+      <PropertyRef Name="SpaId" />
+    </Key>
+    <Property Name="SpaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SpaName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MobileNumber" Type="Int64" />
+    <Property Name="TelephoneNumber" Type="Int64" />
+    <Property Name="EnrolledDate" Type="DateTime" Precision="0" />
+    <Property Name="Email" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EstablishedYear" Type="Int32" />
+    <Property Name="ServiceId" Type="Int32" />
+    <NavigationProperty Name="Service" Relationship="Self.FK__Spa__ServiceId__286302EC" FromRole="Spa" ToRole="Services" />
+  </EntityType>
+  <Association Name="FK__Gym__ServiceId__25869641">
+    <End Role="Services" Type="Self.Service" Multiplicity="0..1" />
+    <End Role="Gym" Type="Self.Gym" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Services">
+        <PropertyRef Name="ServiceId" />
+      </Principal>
+      <Dependent Role="Gym">
+        <PropertyRef Name="ServiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Saloon__ServiceI__2B3F6F97">
+    <End Role="Services" Type="Self.Service" Multiplicity="0..1" />
+    <End Role="Saloon" Type="Self.Saloon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Services">
+        <PropertyRef Name="ServiceId" />
+      </Principal>
+      <Dependent Role="Saloon">
+        <PropertyRef Name="ServiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Spa__ServiceId__286302EC">
+    <End Role="Services" Type="Self.Service" Multiplicity="0..1" />
+    <End Role="Spa" Type="Self.Spa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Services">
+        <PropertyRef Name="ServiceId" />
+      </Principal>
+      <Dependent Role="Spa">
+        <PropertyRef Name="ServiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FitnessproEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Gyms" EntityType="Self.Gym" />
+    <EntitySet Name="Saloons" EntityType="Self.Saloon" />
+    <EntitySet Name="Services" EntityType="Self.Service" />
+    <EntitySet Name="Spas" EntityType="Self.Spa" />
+    <AssociationSet Name="FK__Gym__ServiceId__25869641" Association="Self.FK__Gym__ServiceId__25869641">
+      <End Role="Services" EntitySet="Services" />
+      <End Role="Gym" EntitySet="Gyms" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Saloon__ServiceI__2B3F6F97" Association="Self.FK__Saloon__ServiceI__2B3F6F97">
+      <End Role="Services" EntitySet="Services" />
+      <End Role="Saloon" EntitySet="Saloons" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Spa__ServiceId__286302EC" Association="Self.FK__Spa__ServiceId__286302EC">
+      <End Role="Services" EntitySet="Services" />
+      <End Role="Spa" EntitySet="Spas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

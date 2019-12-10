@@ -1,0 +1,251 @@
+﻿
+@{
+    ViewBag.Title = "NewStaff";
+    Layout = "~/Areas/Saloon/Views/Shared/_SaloonLayout.cshtml";
+} <!-- With Bottom Border start -->
+<section id="bottom-border">
+    <div class="row match-height">
+        <div class="col-xl-12 col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">New Staff</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <ul class="nav nav-tabs nav-underline no-hover-bg" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="base-tab31" data-toggle="tab" aria-controls="tab31" href="#tab31" role="tab" aria-selected="true">Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="base-tab32" data-toggle="tab" aria-controls="tab32" href="#tab32" role="tab" aria-selected="false">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="base-tab33" data-toggle="tab" aria-controls="tab33" href="#tab33" role="tab" aria-selected="false">Commissions</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content px-1 pt-1">
+                            <div class="tab-pane active" id="tab31" role="tabpanel" aria-labelledby="base-tab31">
+                                <section id="basic-form-layouts">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="card">
+                                                <div class="card-content collpase show">
+                                                    <div class="card-body">
+                                                        <form class="form form-horizontal form-bordered">
+                                                            <div class="form-body">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <label class="col-md-3 label-control" for="userinput1">Fist Name</label>
+                                                                            <div class="col-md-9">
+                                                                                <input type="text" id="userinput1" class="form-control border-primary" placeholder="First Name" name="firstname">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <label class="col-md-3 label-control" for="userinput2">Last Name</label>
+                                                                            <div class="col-md-9">
+                                                                                <input type="text" id="userinput2" class="form-control border-primary" placeholder="Last Name" name="lastname">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row last">
+                                                                            <label class="col-md-3 label-control" for="userinput3">Mobile Number</label>
+                                                                            <div class="col-md-9">
+                                                                                <input type="text" id="userinput3" class="form-control border-primary" placeholder="Mobile Number" name="MobileNumber">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row last">
+                                                                            <label class="col-md-3 label-control" for="userinput4">Phone Number</label>
+                                                                            <div class="col-md-9">
+                                                                                <input type="text" id="userinput4" class="form-control border-primary" placeholder="Phone Number" name="PhoneNumber">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row last">
+                                                                            <label class="col-md-3 label-control" for="userinput3">Email</label>
+                                                                            <div class="col-md-9">
+                                                                                <input type="text" id="userinput3" class="form-control border-primary" placeholder="Email" name="Email">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <label class="col-md-3 label-control" for="userinput2">Send notifications by</label>
+                                                                            <div class="col-md-9">
+                                                                                <select class="custom-select block" id="customSelect">
+                                                                                    <option selected="none">Don't send notifications</option>
+                                                                                    <option value="email">Email</option>
+                                                                                    <option value="sms">SMS</option>
+                                                                                    <option value="both">Email &nbsp; Notification</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row last">
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input type="checkbox" class="custom-control-input" checked name="customCheck" id="customCheck2">
+                                                                                <label class="custom-control-label" for="customCheck2">Custom checkbox checked</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <h4 class="form-section"><i class="ft-mail"></i> Personal Info</h4>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <label class="col-md-3 label-control" for="userinput1">Gender</label>
+                                                                            <div class="col-md-9">
+                                                                                <select class="custom-select block" id="customSelect">
+                                                                                    <option selected="">UnKnown</option>
+                                                                                    <option value="male">Male</option>
+                                                                                    <option value="female">Female</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <label class="col-md-3 label-control" for="userinput2">Referral source</label>
+                                                                            <div class="col-md-9">
+                                                                                <select class="custom-select block" id="customSelect">
+                                                                                    <option selected=""></option>
+                                                                                    <option value="walkin">Walk In</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <label class="col-md-3 label-control" for="userinput1">Birthday</label>
+                                                                            <div class="col-md-9">
+                                                                                <div class="input-group">
+                                                                                    <div class="input-group-prepend">
+                                                                                        <span class="input-group-text">
+                                                                                            <span class="fa fa-calendar-o"></span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <input type='text' class="form-control pickadate" placeholder="Birthday" />
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row last">
+                                                                            <label class="col-md-3 label-control" for="userinput4">Client Notes</label>
+                                                                            <div class="col-md-9">
+                                                                                <input type="text" id="userinput4" class="form-control border-primary" placeholder="Phone Number" name="PhoneNumber">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input type="checkbox" class="custom-control-input" checked name="customCheck" id="customCheck2">
+                                                                                <label class="custom-control-label" for="customCheck2">Display on all bookings</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <h4 class="form-section"><i class="ft-mail"></i> Address</h4>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <label class="col-md-3 label-control" for="userinput1">Address</label>
+                                                                            <div class="col-md-9">
+                                                                                <input type="text" id="userinput1" class="form-control border-primary" placeholder="Address" name="address">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <label class="col-md-3 label-control" for="userinput2">Suburb</label>
+                                                                            <div class="col-md-9">
+                                                                                <input type="text" id="userinput2" class="form-control border-primary" placeholder="Suburb" name="suburb">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <label class="col-md-3 label-control" for="userinput1">City</label>
+                                                                            <div class="col-md-9">
+                                                                                <input type="text" id="userinput1" class="form-control border-primary" placeholder="City" name="city">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <label class="col-md-3 label-control" for="userinput2">State</label>
+                                                                            <div class="col-md-9">
+                                                                                <input type="text" id="userinput2" class="form-control border-primary" placeholder="State" name="state">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <label class="col-md-3 label-control" for="userinput1">Zip / Post Code</label>
+                                                                            <div class="col-md-9">
+                                                                                <input type="text" id="userinput1" class="form-control border-primary" placeholder="Zip / Post Code" name="pincode">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-actions right">
+                                                                <button type="button" class="btn btn-warning mr-1">
+                                                                    <i class="ft-x"></i> Cancel
+                                                                </button>
+                                                                <button type="submit" class="btn btn-primary">
+                                                                    <i class="fa fa-check-square-o"></i> Save
+                                                                </button>
+                                                            </div>
+                                                        </form>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+                            <div class="tab-pane" id="tab32" role="tabpanel" aria-labelledby="base-tab32">
+                                <p>Sugar plum tootsie roll biscuit caramels. Liquorice brownie pastry cotton candy oat cake fruitcake jelly chupa chups. Pudding caramels pastry powder cake soufflé wafer caramels. Jelly-o pie cupcake.</p>
+                            </div>
+                            <div class="tab-pane" id="tab33" role="tabpanel" aria-labelledby="base-tab33">
+                                <p>Biscuit ice cream halvah candy canes bear claw ice cream cake chocolate bar donut. Toffee cotton candy liquorice. Oat cake lemon drops gingerbread dessert caramels. Sweet dessert jujubes powder sweet sesame snaps.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- With Bottom Border end -->
+
+
+
+
+

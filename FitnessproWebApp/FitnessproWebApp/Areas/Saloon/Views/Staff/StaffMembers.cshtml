@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "StaffMembers";
+    Layout = "~/Areas/Saloon/Views/Shared/_SaloonLayout.cshtml";
+}
+
+<!-- Basic initialization table -->
+<section id="initialization">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Staff List</h4>
+                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                    <div class="heading-elements">
+                        <ul class="list-inline mb-0">
+                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                            <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                            <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                            <li><a data-action="close"><i class="ft-x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-header-right col-12">
+                    <div class="btn-group float-md-right">
+                        <select class="custom-select block" id="customSelect">
+                            <option selected="">Options</option>
+                            <option value="1">Download Excel</option>
+                            <option value="2">Download CSV</option>
+                        </select>
+                        <button class="btn btn-secondary btn-block" type="button">New Staff</button>
+                    </div>
+                </div>
+                <div class="card-content collapse show">
+                    <div class="card-body card-dashboard">
+                        <table class="table table-striped table-bordered dataex-key-basic">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Mobile Number</th>
+                                    <th>Email</th>
+                                    <th>Appointments</th>
+                                    <th>User Permissions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Donna Snider</td>
+                                    <td>Customer Support</td>
+                                    <td>New York</td>
+                                    <td>27</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Mobile Number</th>
+                                    <th>Email</th>
+                                    <th>Appointments</th>
+                                    <th>User Permissions</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Basic initialization table -->

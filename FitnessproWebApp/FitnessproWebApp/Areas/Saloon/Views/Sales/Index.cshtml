@@ -1,0 +1,140 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Saloon/Views/Shared/_SaloonLayout.cshtml";
+}
+
+    <section id="bottom-border">
+        <div class="row match-height">
+            <div class="col-xl-12 col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Sales</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body">
+                            <ul class="nav nav-tabs nav-underline no-hover-bg" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="base-tab31" data-toggle="tab" aria-controls="tab31" href="#tab31" role="tab" aria-selected="true">Daily Sales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="base-tab32" data-toggle="tab" aria-controls="tab32" href="#tab32" role="tab" aria-selected="false">Appointments</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="base-tab33" data-toggle="tab" aria-controls="tab33" href="#tab33" role="tab" aria-selected="false">Invoice</a>
+                                </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" id="base-tab34" data-toggle="tab" aria-controls="tab34" href="#tab34" role="tab" aria-selected="false">Vouchers</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content px-1 pt-1">
+                                <div class="tab-pane active" id="tab31" role="tabpanel" aria-labelledby="base-tab31">
+                                    @*Daily sales tab starts*@
+                                    <section id="basic-form-layouts">
+                                        <div class="row match-height">
+                                            <div class="col-md-6">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title" id="basic-layout-form">Transaction Summary</h4>
+                                                    </div>
+                                                        <div class="card-body">
+                                                                <table class="table">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Item type</th>
+                                                                            <th>Sales qty</th>
+                                                                            <th>Refund qty</th>
+                                                                            <th>Gross total</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th scope="row">1</th>
+                                                                            <td>Mark</td>
+                                                                            <td>Otto</td>
+                                                                            <td>mdo</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th scope="row">2</th>
+                                                                            <td>Jacob</td>
+                                                                            <td>Thornton</td>
+                                                                            <td>fat</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th scope="row">3</th>
+                                                                            <td>Larry</td>
+                                                                            <td>the Bird</td>
+                                                                            <td>twitter</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                           
+                                                        </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title" id="basic-layout-colored-form-control">Cash Movement Summary</h4>
+                                                    </div>
+                                                    <div class="card-content collapse show">
+                                                        <div class="card-body">
+
+                                                            <div class="card-body">
+                                                                <table class="table">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Payment type</th>
+                                                                            <th>Payments collected</th>
+                                                                            <th>Refunds paid</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th scope="row">1</th>
+                                                                            <td>Mark</td>
+                                                                            <td>Otto</td>
+                                                                            <td>mdo</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th scope="row">2</th>
+                                                                            <td>Jacob</td>
+                                                                            <td>Thornton</td>
+                                                                            <td>fat</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th scope="row">3</th>
+                                                                            <td>Larry</td>
+                                                                            <td>the Bird</td>
+                                                                            <td>twitter</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        s
+</section>
+
+                                        @*Daily sales tab ends*@
+
+                                </div>
+                                <div class="tab-pane" id="tab32" role="tabpanel" aria-labelledby="base-tab32">
+                                    <p>Sugar plum tootsie roll biscuit caramels. Liquorice brownie pastry cotton candy oat cake fruitcake jelly chupa chups. Pudding caramels pastry powder cake soufflé wafer caramels. Jelly-o pie cupcake.</p>
+                                </div>
+                                <div class="tab-pane" id="tab33" role="tabpanel" aria-labelledby="base-tab33">
+                                    <p>Biscuit ice cream halvah candy canes bear claw ice cream cake chocolate bar donut. Toffee cotton candy liquorice. Oat cake lemon drops gingerbread dessert caramels. Sweet dessert jujubes powder sweet sesame snaps.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
