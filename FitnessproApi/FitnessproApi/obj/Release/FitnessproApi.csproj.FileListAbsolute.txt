@@ -175,3 +175,16 @@ D:\FitnessProApp\FitnessproApp\FitnessproApi\FitnessproApi\obj\Release\Fitnesspr
 D:\FitnessProApp\FitnessproApp\FitnessproApi\FitnessproApi\obj\Release\FitnessproApi.csproj.CopyComplete
 D:\FitnessProApp\FitnessproApp\FitnessproApi\FitnessproApi\obj\Release\FitnessproApi.dll
 D:\FitnessProApp\FitnessproApp\FitnessproApi\FitnessproApi\obj\Release\FitnessproApi.pdb
+D:\FitnessProApp\FitnessproApp\FitnessproApi\FitnessproApi\bin\AutoMapper.dll
+D:\FitnessProApp\FitnessproApp\FitnessproApi\FitnessproApi\bin\Fitnesspro.Models.dll
+D:\FitnessProApp\FitnessproApp\FitnessproApi\FitnessproApi\bin\FitnessproDataAccess.dll
+D:\FitnessProApp\FitnessproApp\FitnessproApi\FitnessproApi\bin\Swashbuckle.Core.dll
+D:\FitnessProApp\FitnessproApp\FitnessproApi\FitnessproApi\bin\System.Web.Cors.dll
+D:\FitnessProApp\FitnessproApp\FitnessproApi\FitnessproApi\bin\System.Web.Http.Cors.dll
+D:\FitnessProApp\FitnessproApp\FitnessproApi\FitnessproApi\bin\WebActivatorEx.dll
+D:\FitnessProApp\FitnessproApp\FitnessproApi\FitnessproApi\bin\Fitnesspro.Models.pdb
+D:\FitnessProApp\FitnessproApp\FitnessproApi\FitnessproApi\bin\FitnessproDataAccess.pdb
+D:\FitnessProApp\FitnessproApp\FitnessproApi\FitnessproApi\bin\FitnessproDataAccess.dll.config
+D:\FitnessProApp\FitnessproApp\FitnessproApi\FitnessproApi\bin\AutoMapper.pdb
+D:\FitnessProApp\FitnessproApp\FitnessproApi\FitnessproApi\bin\AutoMapper.xml
+D:\FitnessProApp\FitnessproApp\FitnessproApi\FitnessproApi\bin\System.Web.Http.Cors.xml

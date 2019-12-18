@@ -1,0 +1,10 @@
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\bin\Debug\Fitnesspro.Models.dll
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\bin\Debug\Fitnesspro.Models.pdb
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\obj\Debug\Fitnesspro.Models.csprojAssemblyReference.cache
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\obj\Debug\Fitnesspro.Models.csproj.CoreCompileInputs.cache
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\obj\Debug\Fitnesspro.Models.dll
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\obj\Debug\Fitnesspro.Models.pdb
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\bin\Debug\AutoMapper.dll
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\bin\Debug\AutoMapper.pdb
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\bin\Debug\AutoMapper.xml
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\obj\Debug\Fitnesspro.Models.csproj.CopyComplete

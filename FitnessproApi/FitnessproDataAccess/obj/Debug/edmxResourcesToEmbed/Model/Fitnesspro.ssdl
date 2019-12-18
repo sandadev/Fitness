@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FitnessproModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Gym">
+    <Key>
+      <PropertyRef Name="GymId" />
+    </Key>
+    <Property Name="GymId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="20" />
+    <Property Name="LastName" Type="varchar" MaxLength="20" />
+    <Property Name="GymName" Type="varchar" MaxLength="20" />
+    <Property Name="MobileNumber" Type="bigint" />
+    <Property Name="TelephoneNumber" Type="bigint" />
+    <Property Name="EnrolledDate" Type="date" />
+    <Property Name="Email" Type="varchar" MaxLength="20" />
+    <Property Name="EstablishedYear" Type="int" />
+    <Property Name="ServiceId" Type="int" />
+  </EntityType>
+  <EntityType Name="Saloon">
+    <Key>
+      <PropertyRef Name="SaloonId" />
+    </Key>
+    <Property Name="SaloonId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="20" />
+    <Property Name="LastName" Type="varchar" MaxLength="20" />
+    <Property Name="SaloonName" Type="varchar" MaxLength="20" />
+    <Property Name="MobileNumber" Type="bigint" />
+    <Property Name="TelephoneNumber" Type="bigint" />
+    <Property Name="EnrolledDate" Type="date" />
+    <Property Name="Email" Type="varchar" MaxLength="20" />
+    <Property Name="EstablishedYear" Type="int" />
+    <Property Name="ServiceId" Type="int" />
+  </EntityType>
+  <EntityType Name="Services">
+    <Key>
+      <PropertyRef Name="ServiceId" />
+    </Key>
+    <Property Name="ServiceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ServiceName" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Spa">
+    <Key>
+      <PropertyRef Name="SpaId" />
+    </Key>
+    <Property Name="SpaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="20" />
+    <Property Name="LastName" Type="varchar" MaxLength="20" />
+    <Property Name="SpaName" Type="varchar" MaxLength="20" />
+    <Property Name="MobileNumber" Type="bigint" />
+    <Property Name="TelephoneNumber" Type="bigint" />
+    <Property Name="EnrolledDate" Type="date" />
+    <Property Name="Email" Type="varchar" MaxLength="20" />
+    <Property Name="EstablishedYear" Type="int" />
+    <Property Name="ServiceId" Type="int" />
+  </EntityType>
+  <Association Name="FK__Gym__ServiceId__25869641">
+    <End Role="Services" Type="Self.Services" Multiplicity="0..1" />
+    <End Role="Gym" Type="Self.Gym" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Services">
+        <PropertyRef Name="ServiceId" />
+      </Principal>
+      <Dependent Role="Gym">
+        <PropertyRef Name="ServiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Saloon__ServiceI__2B3F6F97">
+    <End Role="Services" Type="Self.Services" Multiplicity="0..1" />
+    <End Role="Saloon" Type="Self.Saloon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Services">
+        <PropertyRef Name="ServiceId" />
+      </Principal>
+      <Dependent Role="Saloon">
+        <PropertyRef Name="ServiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Spa__ServiceId__286302EC">
+    <End Role="Services" Type="Self.Services" Multiplicity="0..1" />
+    <End Role="Spa" Type="Self.Spa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Services">
+        <PropertyRef Name="ServiceId" />
+      </Principal>
+      <Dependent Role="Spa">
+        <PropertyRef Name="ServiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FitnessproModelStoreContainer">
+    <EntitySet Name="Gym" EntityType="Self.Gym" Schema="fitness6" store:Type="Tables" />
+    <EntitySet Name="Saloon" EntityType="Self.Saloon" Schema="fitness6" store:Type="Tables" />
+    <EntitySet Name="Services" EntityType="Self.Services" Schema="fitness6" store:Type="Tables" />
+    <EntitySet Name="Spa" EntityType="Self.Spa" Schema="fitness6" store:Type="Tables" />
+    <AssociationSet Name="FK__Gym__ServiceId__25869641" Association="Self.FK__Gym__ServiceId__25869641">
+      <End Role="Services" EntitySet="Services" />
+      <End Role="Gym" EntitySet="Gym" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Saloon__ServiceI__2B3F6F97" Association="Self.FK__Saloon__ServiceI__2B3F6F97">
+      <End Role="Services" EntitySet="Services" />
+      <End Role="Saloon" EntitySet="Saloon" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Spa__ServiceId__286302EC" Association="Self.FK__Spa__ServiceId__286302EC">
+      <End Role="Services" EntitySet="Services" />
+      <End Role="Spa" EntitySet="Spa" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

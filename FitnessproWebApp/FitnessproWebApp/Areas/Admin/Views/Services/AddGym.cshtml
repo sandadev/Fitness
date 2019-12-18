@@ -4,5 +4,292 @@
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>AddGym</h2>
+<section id="bottom-border">
+    <div class="row match-height">
+        <div class="col-xl-12 col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">New Gym</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <ul class="nav nav-tabs nav-underline no-hover-bg" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="base-tab31" data-toggle="tab" aria-controls="tab31" href="#tab31" role="tab" aria-selected="true">User Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="base-tab32" data-toggle="tab" aria-controls="tab32" href="#tab32" role="tab" aria-selected="false">Package</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content px-1 pt-1">
+                            <div class="tab-pane active" id="tab31" role="tabpanel" aria-labelledby="base-tab31">
+                                <section id="basic-form-layouts">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="card">
+                                                <div class="card-content collpase show">
+                                                    <div class="card-body">
+                                                        <form class="form form-horizontal form-bordered" novalidate>
+                                                            <div class="form-body">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <label class="col-md-3 label-control" for="txtFirstName">Fist Name</label>
+                                                                            <div class="col-md-9">
+                                                                                <input type="text" id="txtFirstName" class="form-control border-primary" placeholder="First Name" name="firstname" required data-validation-required-message="This field is required">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                            <label class="col-md-3 label-control" for="txtLastName">Last Name</label>
+                                                                            <div class="col-md-9">
+                                                                                <input type="text" id="txtLastName" class="form-control border-primary" placeholder="Last Name" name="lastname">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row last">
+                                                                            <label class="col-md-3 label-control" for="txtEntityName">Gym Name</label>
+                                                                            <div class="col-md-9">
+                                                                                <input type="text" id="txtGymName" class="form-control border-primary" placeholder="Entity Name" name="entityname">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row last">
+                                                                            <label class="col-md-3 label-control" for="txtEmail">Email</label>
+                                                                            <div class="col-md-9">
+                                                                                <input type="email" id="txtEmail" class="form-control border-primary" placeholder="Email" name="email">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    @*<div class="col-md-6">
+                                                                            <div class="form-group row last">
+                                                                                <label class="col-md-3 label-control" for="txtEntityImage">Gym Logo</label>
+                                                                                <div class="col-md-9">
 
+                                                                                    <input type="file" name="txtEntityImage" class="form-control-file" required id="txtEntityImage">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>*@
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row last">
+                                                                            <label class="col-md-3 label-control" for="txtMobileNumber">Mobile Number</label>
+                                                                            <div class="col-md-9">
+                                                                                <input type="number" id="txtMobileNumber" class="form-control border-primary" placeholder="Mobile Number" name="mobilenumber">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row last">
+                                                                            <label class="col-md-3 label-control" for="txtTelephoneNumber">Telephone Number</label>
+                                                                            <div class="col-md-9">
+                                                                                <input type="tel" id="txtTelephoneNumber" class="form-control border-primary" placeholder="Telephone Number" name="telephonenumber">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row last">
+                                                                            <label class="col-md-3 label-control" for="txtEnrolledDate">Enrolled Date</label>
+                                                                            <div class="col-md-9">
+                                                                                <div class="input-group">
+                                                                                    <div class="input-group-prepend">
+                                                                                        <span class="input-group-text">
+                                                                                            <span class="fa fa-calendar-o"></span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <input type='text' class="form-control pickadate" placeholder="Enroll Date" id="txtEnrollDate" />
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row last">
+                                                                            <label class="col-md-3 label-control" for="txtEstablishedYear">Established Year</label>
+                                                                            <div class="col-md-9">
+                                                                                <input type="text" id="txtEstablishedYear" class="form-control border-primary" placeholder="Established Year" name="txtEstablishedYear">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-actions right">
+                                                                <button type="button" class="btn btn-warning mr-1">
+                                                                    <i class="ft-x"></i> Cancel
+                                                                </button>
+                                                                <button type="submit" class="btn btn-primary" id="btnSaveGym">
+                                                                    <i class="fa fa-check-square-o"></i> Save
+                                                                </button>
+                                                            </div>
+                                                        </form>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+                            <div class="tab-pane" id="tab32" role="tabpanel" aria-labelledby="base-tab32">
+                                @*tab 2 form can insert here*@
+
+                                <form class="form form-horizontal form-bordered" novalidate>
+                                    <div class="form-body">
+                                        <h4 class="form-section"><i class="ft-user"></i> Select Package</h4>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-md-3 label-control" for="ddlEntityType">Packages</label>
+                                                    <div class="col-md-9">
+                                                        <select id="ddlEntityType" name="ddlEntityType" class="form-control">
+                                                            <option value="0">Select Package</option>
+                                                            <option value="1">Test</option>
+                                                            <option value="2">Saloon</option>
+                                                            <option value="3">Spa</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h4 class="form-section"><i class="ft-clipboard"></i> Package Details</h4>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row last">
+                                                    <label class="col-md-3 label-control" for="txtPackageName">Package Name</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" id="txtPackageName" class="form-control border-primary" placeholder="Package Name" name="packagename">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row last">
+                                                    <label class="col-md-3 label-control" for="txtPackageAmount">Amount</label>
+                                                    <div class="col-md-9">
+                                                        <input type="tel" id="txtPackageAmount" class="form-control border-primary" placeholder="Amount" name="amount">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row last">
+                                                    <label class="col-md-3 label-control" for="txtStartDate">Start Date</label>
+                                                    <div class="col-md-9">
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">
+                                                                    <span class="fa fa-calendar-o"></span>
+                                                                </span>
+                                                            </div>
+                                                            <input type='text' class="form-control pickadate" placeholder="Start Date" id="txtStartDate" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row last">
+                                                    <label class="col-md-3 label-control" for="txtEndDate">End Date</label>
+                                                    <div class="col-md-9">
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">
+                                                                    <span class="fa fa-calendar-o"></span>
+                                                                </span>
+                                                            </div>
+                                                            <input type='text' class="form-control pickadate" placeholder="End Date" id="txtEndDate" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-md-3 label-control" for="userinput8">Note</label>
+                                                    <div class="col-md-9">
+                                                        <textarea id="userinput8" rows="6" class="form-control border-primary" name="bio" placeholder="Bio"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-actions right">
+                                            <button type="button" class="btn btn-warning mr-1">
+                                                <i class="ft-x"></i> Cancel
+                                            </button>
+                                            <button type="submit" class="btn btn-primary">
+                                                <i class="fa fa-check-square-o"></i> Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <hr />
+                                @*Package List table*@
+                                <section id="initialization">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="form-section"><i class="ft-clipboard"></i> Package List</h4>
+                                                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                                                    <div class="heading-elements">
+                                                        <ul class="list-inline mb-0">
+                                                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                                            <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                                            <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                                            <li><a data-action="close"><i class="ft-x"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content collapse show">
+                                                    <div class="card-body card-dashboard">
+                                                        <table class="table table-striped table-bordered dataex-key-basic">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Name</th>
+                                                                    <th>Position</th>
+                                                                    <th>Office</th>
+                                                                    <th>Age</th>
+                                                                    <th>Start date</th>
+                                                                    <th>Salary</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Tiger Nixon</td>
+                                                                    <td>System Architect</td>
+                                                                    <td>Edinburgh</td>
+                                                                    <td>61</td>
+                                                                    <td>2011/04/25</td>
+                                                                    <td>$320,800</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+@section Scripts{
+   
+}

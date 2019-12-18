@@ -1,0 +1,10 @@
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\bin\Release\Fitnesspro.Models.dll
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\bin\Release\Fitnesspro.Models.pdb
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\bin\Release\AutoMapper.dll
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\bin\Release\AutoMapper.pdb
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\bin\Release\AutoMapper.xml
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\obj\Release\Fitnesspro.Models.csprojAssemblyReference.cache
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\obj\Release\Fitnesspro.Models.csproj.CoreCompileInputs.cache
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\obj\Release\Fitnesspro.Models.csproj.CopyComplete
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\obj\Release\Fitnesspro.Models.dll
+D:\FitnessProApp\FitnessproApp\FitnessproApi\Fitnesspro.Models\obj\Release\Fitnesspro.Models.pdb

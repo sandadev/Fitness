@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e1e4ed9226284c8f99231f4d85078798" Name="Diagram1">
+        <EntityTypeShape EntityType="FitnessproModel.Gym" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FitnessproModel.Saloon" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FitnessproModel.Service" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FitnessproModel.Spa" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <AssociationConnector Association="FitnessproModel.FK__Gym__ServiceId__25869641" ManuallyRouted="false" />
+        <AssociationConnector Association="FitnessproModel.FK__Saloon__ServiceI__2B3F6F97" ManuallyRouted="false" />
+        <AssociationConnector Association="FitnessproModel.FK__Spa__ServiceId__286302EC" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

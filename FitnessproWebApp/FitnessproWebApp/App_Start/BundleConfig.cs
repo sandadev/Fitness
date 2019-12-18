@@ -54,7 +54,10 @@ namespace FitnessproWebApp
                       "~/Theme/app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js",
                       "~/Theme/app-assets/js/scripts/navs/navs.js",
                       "~/Theme/app-assets/vendors/js/forms/validation/jqBootstrapValidation.js",
-                      "~/Theme/app-assets/js/scripts/forms/validation/form-validation.js"
+                      "~/Theme/app-assets/js/scripts/forms/validation/form-validation.js",
+                      "~/Scripts/DataTables/jquery.dataTables.js",
+                      "~/Scripts/DataTables/dataTables.bootstrap.js",
+                      "~/Scripts/bootstrap-datepicker.js"
                       )) ;
             
             //Template scripts and css
@@ -84,8 +87,17 @@ namespace FitnessproWebApp
                       "~/Theme/app-assets/vendors/css/pickers/datetime/bootstrap-datetimepicker.css",
                       "~/Theme/app-assets/vendors/css/pickers/pickadate/pickadate.css",
                       "~/Theme/app-assets/css/plugins/pickers/daterange/daterange.css",
-                      "~/Theme/app-assets/css/plugins/forms/validation/form-validation.css"
+                      "~/Theme/app-assets/css/plugins/forms/validation/form-validation.css",
+                      "~/Content/DataTables/css/datatables.bootstrap.css",
+                      "~/Content/bootstrap-datepicker.css"
                       ));
+
+
+            bundles.Add(new ScriptBundle("~/Fitnesspro").Include(
+                     "~/Scripts/Fitnesspro/Admin/Gym/gym.js",
+                     "~/Scripts/Fitnesspro/common/utility.js"
+
+                     ));
         }
     }
 }
